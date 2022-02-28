@@ -1,0 +1,12 @@
+version: '2'
+services:
+  kalilinux:
+    tty: true
+    build:
+      context: .
+      dockerfile: dockerfiles/Dockerfile_kali
+  metasploitable:
+    tty: true
+    build:
+      context: .
+      dockerfile: dockerfiles/Dockerfile_meta

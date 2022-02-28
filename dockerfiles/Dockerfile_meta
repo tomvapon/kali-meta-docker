@@ -1,0 +1,3 @@
+FROM tleemcjr/metasploitable2
+RUN /bin/services.sh
+CMD ["/bin/bash"]
