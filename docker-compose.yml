@@ -10,3 +10,5 @@ services:
     build:
       context: .
       dockerfile: dockerfiles/Dockerfile_meta
+    ports:
+      - "80:80"
