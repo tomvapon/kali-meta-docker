@@ -5,6 +5,8 @@ services:
     build:
       context: .
       dockerfile: dockerfiles/Dockerfile_kali
+    cap_add:
+      - NET_ADMIN
   metasploitable:
     tty: true
     build:

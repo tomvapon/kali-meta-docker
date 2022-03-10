@@ -1,3 +1,12 @@
 FROM tleemcjr/metasploitable2
+
+# This is for opening all vulnerable ports
 RUN /bin/services.sh
+
+# This is necessary for iptables
+RUN apt-get update -y
+RUN apt-get install iptables sudo -y
+RUN adduser root sudo
+
+# Run the command
 CMD ["/bin/bash"]
