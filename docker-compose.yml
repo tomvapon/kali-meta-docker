@@ -12,3 +12,5 @@ services:
     build:
       context: .
       dockerfile: dockerfiles/Dockerfile_meta
+    cap_add:
+      - NET_ADMIN
