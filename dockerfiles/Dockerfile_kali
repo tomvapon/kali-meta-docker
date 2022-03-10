@@ -1,4 +1,8 @@
 FROM kalilinux/kali-rolling
 ENV DEBIAN_FRONTEND noninteractive
+
+# This command installs all kali linux minimal services (nmap, msfconsole...)
 RUN apt update && apt -y --force-yes install kali-linux-headless
+
+# Run the bash
 CMD ["/bin/bash"]
