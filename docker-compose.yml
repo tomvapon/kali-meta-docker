@@ -15,4 +15,5 @@ services:
     cap_add:
       - NET_ADMIN
     volumes:
-      - ./volumes/meta:/etc
+      - ./volumes/meta:/etc/network/interfaces
+      - ./volumes/meta:/etc/cortafuegos
