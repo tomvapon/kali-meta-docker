@@ -8,5 +8,8 @@ RUN apt-get update -y
 RUN apt-get install iptables sudo -y
 RUN adduser root sudo
 
+# Create file for firewall info
+RUN touch /etc/cortafuegos
+
 # Run the command
 CMD ["/bin/bash"]
