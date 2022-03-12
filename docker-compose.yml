@@ -14,3 +14,5 @@ services:
       dockerfile: dockerfiles/Dockerfile_meta
     cap_add:
       - NET_ADMIN
+    volumes:
+      - ./volumes/meta:/etc
