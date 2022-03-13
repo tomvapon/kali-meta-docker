@@ -58,7 +58,7 @@ chips are not able to virtualize AMD64 because they are ARM. Finally, some funct
 work properly.
 
 As part of the work, iptables firewall is employed for closing all ports except 22, 80, 443. If you want to play and exploit Metasploitable 2 vulnerabilities, just delete
-the content in the [cortafuegos]() file, and the iptables rules are disabled.
+the content in the [cortafuegos](https://github.com/tomvapon/kali-meta-docker/blob/main/volumes/meta/cortafuegos) file, and the iptables rules are disabled.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -148,9 +148,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 
-tomvapon
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [forks-shield]: https://img.shields.io/github/forks/tomvapon/kali-meta-docker.svg?style=for-the-badge
@@ -160,4 +157,4 @@ tomvapon
 [issues-shield]: https://img.shields.io/github/issues/tomvapon/kali-meta-docker.svg?style=for-the-badge
 [issues-url]: https://github.com/tomvapon/kali-meta-docker/issues
 [license-shield]: https://img.shields.io/github/license/tomvapon/kali-meta-docker.svg?style=for-the-badge
-[license-url]: https://github.com/tomvapon/kali-meta-docker/blob/master/LICENSE.txt
+[license-url]: https://github.com/tomvapon/kali-meta-docker/blob/main/LICENCE.txt
