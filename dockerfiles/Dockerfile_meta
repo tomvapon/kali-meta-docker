@@ -11,5 +11,6 @@ RUN adduser root sudo
 # Create file for firewall info
 RUN touch /etc/cortafuegos
 
-# Run the command
-CMD ["/bin/bash"]
+# Run the command after up
+ENTRYPOINT /bin/services.sh && iptables-restore < /etc/cortafuegos && /bin/bash
+
